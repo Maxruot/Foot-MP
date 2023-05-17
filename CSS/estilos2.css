@@ -1,0 +1,403 @@
+/* estoy importando una fuente */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+
+
+
+/*menu*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+    
+}
+
+
+/*header superior*/
+
+
+
+.container__menu {
+  width: 100%;
+  height: 70px;
+  background: rgba(4, 75, 4, 0.767);
+  padding: 0px 20px;
+ 
+}
+
+.menu {
+  max-width: 1200px;
+  margin: auto;
+  height: 100%;
+  
+}
+
+nav {
+  height: 100%;
+}
+
+nav > ul {
+  height: 100%;
+  display: flex;
+}
+
+nav > ul > li {
+  height: 100%;
+  list-style: none;
+}
+
+nav > ul > li > a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 14px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: all center 300ms;
+}
+
+nav > ul > li > a:hover {
+  transform: scale(1.1);
+  background: rgb(39, 145, 39);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+
+/* buscador */
+
+.menu li form.barra_buscar {
+  display: flex;
+  align-items: center;
+  
+}
+
+.menu li form.barra_buscar input[type="text"] {
+  width: 0%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  margin-right: 0px;
+  margin-top: 15px;
+  width: 200px;
+}
+
+.menu li form.barra_buscar button[type="submit"] {
+  padding: 10px 15px;
+  background: #04ab04;
+  color: #fff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.menu li form.barra_buscar button[type="submit"]:hover {
+  background: #038603;
+}
+
+.menu li form.barra_buscar {
+  display: flex;
+  align-items: center;
+  margin-left: 530px;
+}
+
+
+
+
+
+
+
+/* aqui le agrego una imagen de fondo a todo el body*/
+
+body {
+    background-image: url('img_inicio/cafe2.jpg');
+    background-size: cover;
+    
+  }
+
+
+
+.imagen_slogan img{
+  float: left; /* para que la imagen flote a la izquierda del slider */
+  max-width: 900px;
+  max-height: 500px;
+  margin-top: 30px;
+        
+    
+}
+
+
+
+/* slider imagenes */
+
+.slider {
+    width: 53%;
+    margin-left: 800px;
+    height: 40%;
+    overflow: hidden;
+    margin-left: 685px;
+    margin-top: 30px;
+  }
+  
+  .slider ul {
+    display: flex;
+    padding: 0;
+    width: 600%;
+    animation: cambio 20s infinite;
+  }
+  
+  .slider li {
+    width: 16.66%;
+    list-style: none;
+  }
+  
+  .slide {
+    position: relative;
+  }
+  
+  .slide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 500px;
+    opacity: 0.8;
+    
+  }
+  @keyframes cambio {
+
+    0% { margin-left: 0; }
+    10% { margin-left: 0; }
+
+    15% { margin-left: -100%; }
+    25% { margin-left: -100%; }
+
+    30% { margin-left: -200%; }
+    45% { margin-left: -200%; }
+    
+    50% { margin-left: -300%; }
+    65% { margin-left: -300%; }
+
+    70% { margin-left: -400%;}
+    85% { margin-left: -400%;}
+
+    90% { margin-left: -500%;}
+    100% { margin-left: -500%;}
+
+  }
+
+
+  /* texto que esta dentro de imagenes del slider */
+
+  .caption {
+    position: absolute;
+    bottom: 0;
+    
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 3.5rem;
+    padding: 3rem;
+    text-align: center;
+    margin-bottom: 250px;
+  }
+
+
+
+
+
+
+
+
+/* titulo de tipo de alimentos*/
+
+.titulo_tipos_comida{
+
+    text-align: center;
+    margin-top: 50px ;
+    color: rgba(214, 223, 214, 0.767);
+    
+   
+
+}
+
+
+
+
+  /* aqui va la lista de tipo de alimentos BOTONES*/
+  
+.tipos_comida {
+    margin-top: 60px;
+    margin-left: 280px;
+    margin-right: 280px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /*numero de columnas 3x3*/
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    list-style: none;
+   
+  } 
+  
+
+
+.tipos_comida a {
+    color: rgb(255, 255, 255); /* cambia el color de la letra */
+    font-family:  'Poppins', sans-serif;
+  }
+
+  
+
+button {
+    margin: 10px;
+    position: relative;
+    border: none;
+    outline: none;
+    background: #384733;
+    cursor: pointer;
+    transition: .3s;
+    overflow: hidden;
+    width: 250px;
+    height: 120px;
+    font-size: 23px;
+    font-family: ;
+}
+
+ /* animacion de los botones de tipo de comidas */
+
+
+
+button span {
+    position: absolute;
+    background: #ffffff;
+    transition: .5s;
+}
+
+button span:nth-child(1) {
+    width: 100%;
+    height: 4px;
+    top: 0;
+    left: -100%;
+}
+
+button span:nth-child(2) {
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    right: -100%;
+}
+
+button span:nth-child(3) {
+    width: 1px;
+    height: 100%;
+    bottom: -100%;
+    left: 0;
+}
+
+button span:nth-child(4) {
+    width: 1px;
+    height: 100%;
+    top: -100%;
+    right: 0;
+}
+
+button:hover span:nth-child(1) {
+    left: 0;
+}
+
+button:hover span:nth-child(2) {
+    right: 0;
+}
+
+button:hover span:nth-child(3) {
+    bottom: 0;
+}
+
+button:hover span:nth-child(4) {
+    top: 0;
+}
+
+
+
+
+
+
+  /* articulo de texto */
+
+
+.articulo{
+
+    text-align: center;
+   
+    justify-content: center;
+    
+    color: rgba(255, 255, 255, 0.767);
+    padding-left: 200px; /* Añade 50px de espacio a la izquierda */
+    padding-right: 200px; /* Añade 50px de espacio a la derecha */
+    padding-bottom: 100px;
+    padding-top: 100px;
+    background-color: rgb(58, 53, 49);
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+.articulo h2{
+
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-family:  'Poppins', sans-serif;
+   
+
+  }
+
+  .articulo h5{
+
+    font-family:  'Poppins', sans-serif;
+  }
+
+
+
+.imagen_logo{
+    
+    text-align: center;
+    margin-top: 30px;
+    transform: scale(0.7);
+
+ 
+ 
+  }
+
+
+
+  /* ultima parte del footer */
+
+
+.clearfix{
+    background-color: rgba(82, 110, 82, 0.767);
+    color: white;
+    text-align: center;
+    height: 100px;
+    line-height: 30px;
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+
+
+
+

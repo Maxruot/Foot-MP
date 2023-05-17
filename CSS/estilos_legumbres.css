@@ -1,0 +1,272 @@
+/* estoy importando una fuente */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+
+
+
+
+
+/*menu*/
+
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+  
+}
+
+header{
+
+width: 100%;
+top: 0;
+left: 0;
+background:rgb(38, 34, 28);
+}
+
+
+/*header superior*/
+
+
+
+.container__menu {
+width: 100%;
+height: 70px;
+background: rgba(4, 75, 4, 0.767);
+padding: 0px 20px;
+
+}
+
+.menu {
+max-width: 1200px;
+margin: auto;
+height: 100%;
+
+}
+
+nav {
+height: 100%;
+}
+
+nav > ul {
+height: 100%;
+display: flex;
+}
+
+nav > ul > li {
+height: 100%;
+list-style: none;
+}
+
+nav > ul > li > a {
+width: 100%;
+height: 100%;
+display: flex;
+align-items: center;
+padding: 14px;
+color: white;
+text-transform: uppercase;
+font-size: 14px;
+transition: all center 300ms;
+}
+
+nav > ul > li > a:hover {
+transform: scale(1.1);
+background: rgb(39, 145, 39);
+box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+
+/* buscador */
+
+.menu li form.barra_buscar {
+display: flex;
+align-items: center;
+
+}
+
+.menu li form.barra_buscar input[type="text"] {
+width: 0%;
+padding: 10px;
+border: none;
+border-radius: 5px 0 0 5px;
+margin-right: 0px;
+margin-top: 15px;
+width: 200px;
+}
+
+.menu li form.barra_buscar button[type="submit"] {
+padding: 10px 15px;
+background: #04ab04;
+color: #fff;
+border: none;
+border-radius: 0 5px 5px 0;
+cursor: pointer;
+}
+
+.menu li form.barra_buscar button[type="submit"]:hover {
+background: #038603;
+}
+
+.menu li form.barra_buscar {
+display: flex;
+align-items: center;
+margin-left: 630px;
+}
+
+
+
+
+
+
+/* aqui le agrego una imagen de fondo a todo el body*/
+
+body {
+    background-image: url('C:/Users/piame/Desktop/Comida_Dos/img/cafe2.jpg');
+    background-size: cover;
+  }
+
+
+
+
+
+  .titulo_aceites{
+
+    text-align: center;
+    margin-top: 100px ;
+    color: rgba(214, 223, 214, 0.767);
+    font-size: 1.9em;
+  }
+
+
+.subtitulo_aceites{
+
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    justify-content: center;
+    background-color: rgb(46, 41, 37);
+    color: rgba(247, 244, 244, 0.767);
+    border-radius: 10px;
+
+
+  }
+
+
+
+ 
+
+/* cartas de productos de comida */
+
+
+  .wrap{
+    max-width: 1200px;
+    margin: 0 auto;
+   
+  }
+  
+  .column-4{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+  }
+
+  .tarjeta_comida {
+    background-repeat: no-repeat;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+    background-size: contain;
+    background-position: center;
+    margin-top: 40px;
+  }
+  
+  .titulo_tarjeta_comida{
+    color: #fff;
+    
+    padding: 1.95rem;
+    border-radius: 6px;
+    background: linear-gradient(to top, rgb(0 0 0 / .5), rgb(0 0 0 / .5));
+    
+  }
+  
+  
+  .tarjeta_comida img {
+    object-fit: cover;
+  }
+
+  
+  .btn_tarjeta{
+    background-color:#38ba3f;
+    padding: .25rem 1rem;
+    border-radius: 4px;
+    margin-top: 50px;
+    text-align: right;
+  }
+  
+  .btn_tarjeta a{
+    color: #fff;
+    font-weight: bold;
+    text-align: left;
+  }
+
+
+/* para que todos los botones sean adaptables a cualquier dispositivo */
+  @media (max-width:1024px){
+    .column-4{
+      grid-template-columns: repeat(3,1fr);
+    }
+  }
+  @media (max-width:768px){
+    .column-4{
+      grid-template-columns: repeat(2,1fr);
+    }
+  }
+  @media (max-width:480px){
+    .column-4{
+      grid-template-columns: repeat(1,1fr);
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* ultima parte del footer */
+
+
+  .clearfix{
+    background-color: rgba(82, 110, 82, 0.767);
+    color: white;
+    text-align: center;
+    height: 100px;
+    line-height: 30px;
+    margin-top: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
